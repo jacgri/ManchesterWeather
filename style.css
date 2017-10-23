@@ -1,0 +1,59 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: #4A148C;
+}
+
+.fluid-image {
+  width: 100%;
+  height: auto;
+}
+
+.weather > .current > i {
+  color: orange;
+  font-size: 50px;
+  padding: 5px;
+}
+
+.weather > .current > p {
+  display: inline;
+  padding: 5px;
+}
+
+.weather > .future > i {
+  color: grey;
+  padding: 5px;
+}
+.weather > .future > p {
+  padding: 5px;
+}
+
+.weather > .current {
+  text-align: center;
+  font-weight: 500px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.weather > .future {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .weather {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
