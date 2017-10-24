@@ -16,24 +16,26 @@ h1 {
   height: auto;
 }
 
-.weather > .current > i {
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather > .current > .sunny {
   color: orange;
   font-size: 50px;
   padding: 5px;
 }
 
-.weather > .current > p {
+.weather > .current > .temp {
   display: inline;
   padding: 5px;
 }
 
-.weather > .future > i {
+.weather > .future > .icon {
   color: grey;
-  padding: 5px;
 }
-.weather > .future > p {
-  padding: 5px;
-}
+
 
 .weather > .current {
   text-align: center;
@@ -45,11 +47,13 @@ h1 {
 .weather > .future {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 @media (min-width: 768px) {
   .weather {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
