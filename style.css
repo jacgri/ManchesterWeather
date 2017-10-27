@@ -1,63 +1,59 @@
 body {
+  padding: 0;
+  margin:0;
   font-family: 'Roboto', sans-serif;
 }
+*{
+  box-sizing: border-box;
+}
 
-h1 {
+header {
   color: white;
-  margin: 0;
-  padding: 10px;
+  padding: 40px;
+  padding-bottom: 30px;
   text-align: center;
-  width: 100%;
   background-color: #4A148C;
 }
 
-.fluid-image {
-  width: 100%;
-  height: auto;
-}
-
-.weather {
-  display: flex;
-  flex-direction: column;
-}
-
-.weather > .current > .sunny {
-  color: orange;
-  font-size: 50px;
-  padding: 5px;
-}
-
-.weather > .current > .temp {
-  display: inline;
-  padding: 5px;
-}
-
-.weather > .future > .icon {
-  color: grey;
-}
-
-
-.weather > .current {
-  text-align: center;
-  font-weight: 500px;
-  padding: 10px;
-  font-size: 30px;
-}
-
-.weather > .future {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-@media (min-width: 768px) {
-  .weather {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media (min-width:768px) {
+  header {
+    height: 15vh;
   }
 }
 
+header > h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin:0;
+}
 
+@media (min-width:768px) {
+  header > h1 {
+    font-size: 36px;
+  }
+}
+#banner {
+  background-image: url('images/manchester.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 20vh;
+}
 
+@media(min-width:768px) {
+  #banner {
+    height:40px;
+  }
+}
+
+#weather {
+ padding: 40px;
+}
+
+@media(min-with:768px) {
+  #weather {
+    display: flex;
+    height: 45vh;
+  }
+}
 
