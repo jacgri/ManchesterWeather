@@ -57,3 +57,93 @@ header > h1 {
   }
 }
 
+#weather > #current {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media(min-width:768px) {
+  #weather > #current {
+    margin: 0;
+    margin-right: 40px;
+    }
+}
+
+#weather > #current > .icon > i {
+  padding: 15px;
+}
+
+#weather > #current > .temp {
+  padding: 15px;
+  font-size: 24px;
+}
+
+#weather > #future > .row> .max-temp {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#weather > #future > .row > .min-temp {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#weather > #future > .row > .icon {
+  color: #9E9E9E;
+}
+
+@media(min-width:768px) {
+  #weather > #future {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+  }
+}
+
+#weather > #future > .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(min-width:768px){
+  #weather > #future > .row {
+    flex-direction: column;
+  }
+}
+
+#weather > #future > .row > .date {
+  width: 33%;
+}
+
+@media(min-width:768px) {
+  #weather > #future > .row > .date {
+    width: unset;
+    text-align: center;
+  }
+}
+
+@media(min-width:768px) {
+  #weather > #future > .row > .icon, #weather > #future > .row > .max-temp, #weather > #future > .row > .min-temp {
+    text-align: center;
+  }
+}
+
+.material-icons.md-72 {
+  font-size: 100px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.sunny {
+  color: orange;
+}
+
+.material-icons.cloudy {
+  color: grey;
+}
